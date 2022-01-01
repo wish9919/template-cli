@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "eduplus-live-aws:src/libs/payments/services.walletCreditPayment (nodejs14.x)",
+      "aws": {
+        "region": "ap-south-1"
+      },
+      "invokeTarget": {
+        "target": "code",
+        "projectRoot": "${workspaceFolder}/",
+        "lambdaHandler": "src/libs/payments/services.walletCreditPayment"
+      },
+      "lambda": {
+        "runtime": "nodejs14.x",
+        "payload": {},
+        "environmentVariables": {}
+      }
+    }
+  ]
+}
